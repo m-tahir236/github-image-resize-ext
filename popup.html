@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GitHub Image Resizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h2>GitHub PR Image Resizer</h2>
+
+  <!-- Width Input -->
+  <label for="img-width">Image Width (px):</label>
+  <input type="number" id="img-width" min="50" value="100" />
+
+  <!-- Checkbox to update existing images -->
+  <div class="form-group">
+    <label for="update-existing">Update Existing Images:</label>
+    <input type="checkbox" id="update-existing" />
+  </div>
+
+  <!-- Enable/Disable Toggle -->
+  <div class="form-group">
+    <label for="toggle-script">Enable Resizing:</label>
+    <input type="checkbox" id="toggle-script" checked />
+  </div>
+  <!-- Buttons for Save and Move Images in a row -->
+  <div class="form-group">
+    <button id="save-settings">Save</button>
+    <button id="move-images">Move to Screenshots</button>
+  </div>
+
+  <!-- Success Message -->
+  <p id="success-message" style="color: green; display: none;">Success!</p>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
